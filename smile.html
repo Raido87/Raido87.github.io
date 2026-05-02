@@ -26,10 +26,26 @@
             display: block;
             margin: 0 auto;
             width: fit-content;
+            text-align: center;
         }
         img {
             width: 400px; /* Размер GIF-изображения */
             box-shadow: 0 0 10px rgba(0,0,0,.5);
+        }
+        /* Красный дрожащий текст */
+        .shake-text {
+            font-size: 3rem; /* Большой размер шрифта */
+            color: red;
+            font-weight: bold;
+            animation: shake 0.8s infinite; /* Бесконечная анимация дрожания */
+        }
+        /* Ключевые кадры для эффекта дрожания */
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(10px); }
+            50% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+            100% { transform: translateX(0); }
         }
     </style>
 </head>
@@ -37,6 +53,8 @@
     <!-- GIF-изображение в центре страницы -->
     <div class="gif-container">
         <img src="https://vk.com/doc609282845_697421540?hash=rvKzmLeZzFVlCQ8U4drEZ4wSbX79kWE552UIrHzMc7H&dl=w4zTbgPd4jhVfcBwoRNEZC5zqll9ZUBNfkug2ftGWmD&api=1&no_preview=1" alt="smail">
+        <!-- Дрожащий красный текст -->
+        <h2 class="shake-text">You're an idiot!</h2>
     </div>
 
     <!-- Автоматически играющая музыка (без возможности отключения) -->
