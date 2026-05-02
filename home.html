@@ -4,84 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link href="/css/maincss.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index/style.css">
     <link href="https://i.pinimg.com/736x/ca/fb/dd/cafbdd686129d7d0ee5b5b59f86eece0.jpg" rel="icon">
     <style>
-        /* Основные стили */
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            background-image: url('old-paper-texture.png');
-            background-size: cover;
-            color: #d4c9a8;
-            text-shadow: 1px 1px 2px black;
-        }
-
-        h1, h2 {
-            text-align: center;
-            letter-spacing: 2px;
-            animation: glow 2s infinite alternate;
-        }
-
-        @keyframes glow {
-            from { text-shadow: 0 0 10px #ff0000; }
-            to { text-shadow: 0 0 20px #ff0000; }
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 2px dashed #7b6b5a;
-            box-sizing: border-box;
-        }
-
-        nav ul {
-            list-style-type: none;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        nav li {
-            transition: transform 0.3s ease-in-out;
-        }
-
-        nav li:hover {
-            transform: scale(1.1);
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            filter: sepia(50%) contrast(120%);
-        }
-
-        .story {
-            line-height: 1.6;
-            font-size: 1.2rem;
-            position: relative;
-        }
-
-        .story::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.2);
-            z-index: -1;
-        }
-
-        .secret-link {
-            visibility: hidden;
-            opacity: 0;
-            transition: visibility 0s, opacity 0.5s linear;
-        }
-
-        .secret-link:hover {
-            visibility: visible !important;
-            opacity: 1 !important;
-        }
+       
     </style>
 </head>
 <body>
