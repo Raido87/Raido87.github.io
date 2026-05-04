@@ -5,3 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>...</title>
     <link href="https://i.pinimg.com/736x/ca/fb/dd/cafbdd686129d7d0ee5b5b59f86eece0.jpg" rel="icon">
+    <style>
+        /* Убираем отступы */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #000; /* Черный фон */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Courier New', Courier, monospace; /* Шрифт в стиле старой передачи */
+            color: white;
+        }
+
+        /* Изображение по центру */
+        .center-image {
+            max-width: 80%;
+            max-height: 60vh;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        /* Текст, который скрыт и проявляется при наведении */
+        .hidden-text {
+            opacity: 0; /* Изначально полностью прозрачный */
+            transition: opacity 0.5s ease-in-out; /* Плавное появление */
+            color: #8B0000; /* Тёмно-красный цвет */
+            font-size: 1.5em;
+        }
+
+        /* Контейнер для изображения и текста, чтобы наведение работало на оба элемента */
+        .hover-container {
+            display: inline-block;
+        }
+
+        /* При наведении на контейнер текст становится видимым */
+        .hover-container:hover .hidden-text {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hover-container">
+        <!-- Замените путь к изображению на свой -->
+        <img src="your-image.jpg" alt="Стоп-кадр передачи" class="center-image">
+
+        <div class="hidden-text">
+            Вы помните?
+        </div>
+    </div>
+
+</body>
+</html>
